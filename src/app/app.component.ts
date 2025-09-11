@@ -8,5 +8,13 @@ import { RouterOutlet } from '@angular/router';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'basesAngular';
+  title = 'Jessy';
+   duplicarNumero(valor: number): number {
+    return valor * 2;
+  }
+  pelicula={
+    titulo:"El señor de los anillos",
+    fechalanzamiento: new Date (2001, 11, 19),
+    director:"Peter Jackson"}
+
 }

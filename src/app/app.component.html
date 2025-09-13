@@ -1,15 +1,10 @@
 <p>Hola mundo</p>
-
+<router-outlet>
 <div>
   {{ title }}
 </div>
 
-<div>
-  La suma de 2 + 2 es: {{ 2+2 }}
-</div>
+<hr>
+<app-heroes-list></app-heroes-list>
 
-<div>El doble de 3 es {{duplicarNumero(3)}}</div>
-
-<div>{{pelicula.titulo}}</div>
-<div>{{pelicula.fechalanzamiento}}</div>
-<div>{{pelicula.director}}</div>
+</router-outlet>

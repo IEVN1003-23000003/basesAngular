@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { IHeroes } from '../heroes';
 
 @Component({
   selector: 'app-heroes-list',
@@ -14,34 +15,34 @@ export class HeroesListComponent {
   muestraImagen():void{
     this.showImage=!this.showImage;}
 
-heroes: any[] = [
+heroes: IHeroes[] = [
   {
     imagen: "https://dragonball-api.com/characters/goku_normal.webp",
     nombre: "Goku",
-    descripcion: "Kame Hame Ha",
-    raza: "Saiyan",
+    description: "Kame Hame Ha",
+    race: "Saiyan",
     ki: 9000
   },
   {
     imagen: "https://dragonball-api.com/characters/vegeta_normal.webp",
     nombre: "Vegeta",
-   descripcion: "Final Flash",
-    raza: "Saiyan",
+   description: "Final Flash",
+    race: "Saiyan",
     ki: 8000
   },
 
 {
   imagen: "https://dragonball-api.com/characters/piccolo_normal.webp",
   nombre: "Piccolo",
-  descripcion: "Makankosappo",
-  raza: "Namekiano",
+  description: "Makankosappo",
+  race: "Namekiano",
   ki: 7000
 },
 {
   imagen: "https://dragonball-api.com/characters/Freezer.webp",
   nombre: "Freezer",
-  descripcion: "Death Ball",
-  raza: "Alien",
+  description: "Death Ball",
+  race: "Alien",
   ki: 9500
 }
 ]
